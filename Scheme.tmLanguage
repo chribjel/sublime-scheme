@@ -251,6 +251,19 @@
 					<key>name</key>
 					<string>support.function.general.scheme</string>
 				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?x)
+						(?&lt;=(\()) # preceded by (
+						( 
+							# nullary operators
+							list|newline
+						)
+						(?=(\))) # followed by )
+					</string>
+					<key>name</key>
+					<string>support.function.general.scheme.nullary</string>
+				</dict>
 			</array>
 		</dict>
 		<key>quote</key>
